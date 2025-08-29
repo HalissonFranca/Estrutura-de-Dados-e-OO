@@ -10,11 +10,9 @@ import java.util.ArrayList;
 
 public class Persistencia {
 
-    // Salva passageiros e corridas no mesmo arquivo
     public void salvarCentral(CentralDeInformacoes central, String nomeArquivo) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(nomeArquivo))) {
 
-            // Primeiro salva passageiros
             bw.write("[PASSAGEIROS]");
             bw.newLine();
             for (Passageiro p : central.getTodosOsPassageiros()) {
@@ -22,7 +20,6 @@ public class Persistencia {
                 bw.newLine();
             }
 
-            // Depois salva corridas
             bw.write("[CORRIDAS]");
             bw.newLine();
             for (Corrida c : central.getTodasAsCorridas()) {
@@ -37,7 +34,6 @@ public class Persistencia {
         }
     }
 
-    // Recupera passageiros e corridas do arquivo
     public CentralDeInformacoes recuperarCentral(String nomeArquivo) {
         CentralDeInformacoes central = new CentralDeInformacoes();
         File arquivo = new File(nomeArquivo);
@@ -94,3 +90,4 @@ public class Persistencia {
         return central;
     }
 }
+
