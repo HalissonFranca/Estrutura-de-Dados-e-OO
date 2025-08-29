@@ -19,7 +19,6 @@ public class Corrida {
         this.passageiro = passageiro;
     }
 
-    // Construtor para recriar corrida a partir do arquivo
     public Corrida(long id, String enderecoPartida, String enderecoDestino, Passageiro passageiro) {
         this.id = id;
         this.enderecoPartida = enderecoPartida;
@@ -63,5 +62,6 @@ public class Corrida {
         }
         return passageiro.getNome() + " pede para pegá-" + pronome + " em " + enderecoPartida;
     }
+
 
 }
