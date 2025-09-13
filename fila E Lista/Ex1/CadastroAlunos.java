@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CadastroAlunos {
-    protected List<Alunos> alunos = new ArrayList<>(); // Lista dinâmica
+    protected List<Alunos> alunos = new ArrayList<>();
 
-    // Cadastrar aluno
     public void cadastrar(Alunos aluno) {
         if (aluno != null) {
             alunos.add(aluno);
@@ -16,7 +15,6 @@ public class CadastroAlunos {
         }
     }
 
-    // Listar todos os alunos
     public void listarTodos() {
         if (alunos.isEmpty()) {
             System.out.println("Nenhum aluno cadastrado.");
@@ -37,7 +35,7 @@ public class CadastroAlunos {
                 System.out.println("Aluno encontrado: " + a);
                 a.toString();
                 encontrado = true;
-                break; // para no primeiro encontrado
+                break;
             }
         }
 
@@ -54,7 +52,7 @@ public class CadastroAlunos {
                 alunos.remove(i);
                 System.out.println("Aluno removido: " + a);
                 removido = true;
-                break; // remove apenas o primeiro encontrado
+                break;
             }
         }
 
@@ -63,3 +61,4 @@ public class CadastroAlunos {
         }
     }
 }
+
