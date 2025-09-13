@@ -37,7 +37,7 @@ public class Main {
                         sc.nextLine(); // limpar buffer
 
                         System.out.print("Data de Nascimento: ");
-                        aluno.setDataNascimento(sc.nextLine()); // <-- String mesmo
+                        aluno.setDataNascimento(sc.nextLine());
 
                         cd.cadastrar(aluno);
                         System.out.println("Aluno cadastrado!");
@@ -78,4 +78,5 @@ public class Main {
         }
         sc.close();
     }
+
 }
