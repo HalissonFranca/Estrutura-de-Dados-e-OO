@@ -1,0 +1,25 @@
+Aula 22/9
+==> Comparação prática: qual é mais eficiente para inserções e remoções?
+- Tanto a fila Circular quanto a Encadeada são eficientes na inserção e remoção pois as duas são rápidas para 
+fazer as operações. Porem a Encadeada não precisa definir um tamanho, sendo assim mais automatizado.
+
+==> O que muda em termos de código?
+- A fila circular precisa gerenciar inicio e fim e usar operações %(capacidade); cuidado com condição de 'cheia'.
+- Já a fila encadeada precisa gerenciar o NO de inicio e fim e criar classe Node; remoção/inserção mexe apenas em referências.
+
+Aula 30/9
+==> Complexidade de inserção e remoção na fila normal vs fila de prioridade? 
+- A complexidade de inserção e remoção e praticamente a mesma das filas, porem temos que passar um campo a mais para
+dizer sobre se e urgente ou não o paciente.
+
+==> Por que uma fila encadeada pode ser mais vantajosa que um array nesse caso?
+- No Encadeado quando adicionamos um paciente com urgencia no inicio da fila não será preciso deslocar todos os outros
+pacientes para o final da fila, mas sim somente ajustar os ponteiros e ele e inserido no inicio, a mesma coisa para a remoção.
+
+==> Quando usaríamos cada estrutura na prática?
+- A fila baseado no Array, tem tamanho fixo, normalmente e usado quando se sabe a quantidade de espaço que sera utilizado e
+o acesso e rápido por conta do indice. Poderia ser uado como numa fila de supermecado caso não tenha prioridade.
+
+- Já a Fila Encadeada e muito utilizado quando não se sabe o tamanho que vai ser utilizado, com isso crece a medida com que você 
+necessita de espaços e não precisa deslocar os elementos caso precisa de prioridade. Pode ser usado na prática como em um hospital
+quando tem algum com urgencia.
